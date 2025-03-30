@@ -1,0 +1,132 @@
+/* General Styling */
+:root {
+    --pink-light: #ffb6c1;
+    --pink-dark: #ff69b4;
+    --grey-light: #f7f7f7;
+    --grey-dark: #555;
+    --white: #fff;
+    --black: #333;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--grey-light);
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: var(--pink-dark);
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2em;
+  }
+  
+  button#toggle-dark-mode {
+    background-color: var(--grey-dark);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  /* Section Styling */
+  section {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  h1 {
+    color: var(--pink-dark);
+  }
+  
+  p {
+    font-size: 1.1em;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, textarea, select, button {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid var(--grey-dark);
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--pink-dark);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Notes Display */
+  #notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .note-card {
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid var(--grey-dark);
+    border-radius: 10px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: var(--pink-light);
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: var(--grey-dark);
+    color: var(--white);
+  }
+  
+  .dark-mode header, .dark-mode footer {
+    background-color: var(--pink-dark);
+  }
+  
+  .dark-mode nav a, .dark-mode button#toggle-dark-mode {
+    color: var(--grey-light);
+  }
+  
+  .dark-mode .note-card {
+    background-color: var(--grey-light);
+    color: var(--black);
+  }
+  
